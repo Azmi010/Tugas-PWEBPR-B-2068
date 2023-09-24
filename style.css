@@ -1,0 +1,122 @@
+/* Reset CSS untuk menghilangkan margin dan padding default */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya dasar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header #contact-button, #contact-message {
+    float: left;
+}
+
+header #contact-message ul {
+    list-style: none;
+}
+
+header #contact-message ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header #contact-message ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.section {
+    margin: 40px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section img {
+    width: 30%;
+}
+
+.experience {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+@media screen and (max-width: 1920px) {
+    header button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header button {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    header #contact-message ul li {
+        margin-right: 10px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .section {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .section img {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .experience {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
